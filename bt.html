@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validate(str) {
+        var regexp = /^\(\d{2}\)-\([0]\d{9}\)$/;
+        var result = regexp.test(str);
+        if (result){
+            console.log("OK")
+        }else {
+            console.log("Retype");
+        }
+    }
+    var num1 = "(84)-(0978489645)";
+    var num2 = "(a8)-(22222222)";
+    var num3 = "(12)-(0123456789)";
+    validate(num1);
+    validate(num2);
+    validate(num3);
+</script>
+</body>
+</html>
